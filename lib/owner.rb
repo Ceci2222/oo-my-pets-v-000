@@ -59,7 +59,8 @@ class Owner
   end
     
   def list_pets
-    self.each {|
+    @pets.collet do |type, pets|
+      @pets[type].collect {|pet|
   end
   
   def sell_pets
