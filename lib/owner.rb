@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_accessor :pets, :count, :name
   attr_reader :species
@@ -58,9 +59,7 @@ class Owner
   end
     
   def list_pets
-    @pets.collect do |type, pets|
-      @pets[type].collect {|pet| puts pet.name}
-    end
+    "I have #{@pets[:fishes].count} fish, #{@pets[:dogs].count} dogs(s), and #{@pets[:cats].count} cat(s)."    
   end
   
   def sell_pets
