@@ -56,7 +56,6 @@ class Owner
   
   def feed_fish
     @pets[:fishes].collect {|fish| fish.mood= "happy"}
-    binding.pry
   end
     
   def list_pets
