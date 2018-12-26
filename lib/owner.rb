@@ -59,7 +59,7 @@ class Owner
   end
     
   def list_pets
-    @pets.collet do |type, pets|
+    @pets.collect do |type, pets|
       @pets[type].collect {|pet| puts pet.name}
     end
   end
