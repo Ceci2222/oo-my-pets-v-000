@@ -65,6 +65,7 @@ class Owner
   
   def sell_pets
     @pets.collect do |key, value|
+      binding.pry
       value.mood= "nervous"
     end
   end
